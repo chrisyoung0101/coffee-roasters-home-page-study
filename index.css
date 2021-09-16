@@ -13,3 +13,14 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+/* set images to fluid */
+img {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Fraunces', serif;
+  /* font-family: 'Barlow', sans-serif; */
+}
