@@ -24,3 +24,23 @@ body {
   font-family: 'Fraunces', serif;
   /* font-family: 'Barlow', sans-serif; */
 }
+
+.mobile-menu-btn,
+.mobile-close-btn {
+  width: 2.5em;
+  cursor: pointer;
+}
+
+.footer-logo {
+  width: 12em;
+  /* background: white; */
+}
+
+footer {
+  background-color: #2c343e;
+}
+
+.social {
+  width: 1.5em;
+  cursor: pointer;
+}
