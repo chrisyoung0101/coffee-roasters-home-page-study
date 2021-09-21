@@ -67,13 +67,21 @@
         <!-- What should this be?  We have three cards laying offset on a black background which has type in it. -->
         <!-- first try : keeping the black background and the cards separate in their own divs -->
         <section class="whyChooseUs">
-            <div class="blackRectangleBackGround">
-                <h1>Why choose us?</h1>
-                <p>A large part of our role is choosing which particular coffees will be featured
-                    in our range. This means working closely with the best coffee growers to give
-                    you a more impactful experience on every level.
-                </p>
+            <div class="blackRectangleBackGroundParentContainer">
+                <div class="blackRectangleBackGroundContainer">
+                    <div class="blackRectangleBackGround">
+                        <h1>Why choose us?</h1>
+                        <p>A large part of our role is choosing which particular coffees will be featured
+                            in our range. This means working closely with the best coffee growers to give
+                            you a more impactful experience on every level.
+                        </p>
+                    </div>
+                </div>
+
+
             </div>
+
+
             <!-- flexbox? -->
             <div class="cards">
                 <div class="card">
@@ -105,7 +113,7 @@
         </section>
         <footer>
 
-            <svg>
+            <svg width="237" height="27">
                 <use href="#footer-logo"></use>
             </svg>
 
