@@ -35,12 +35,6 @@ body {
   display: none;
 }
 
-/* svg */
-#footer-logo {
-  width: 12em;
-  fill: #fff;
-}
-
 footer {
   background-color: #2c343e;
 }
@@ -69,4 +63,26 @@ footer {
 
 .blackRectangleBackGround {
   background-color: #2c343e;
+}
+
+.container {
+  /* remove margin top bottom & add white space to left right */
+  margin: 0 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* svg */
+#nav-logo {
+  /* width: 12em; */
+  fill: black;
+}
+
+/* svg */
+#footer-logo {
+  width: 12em;
+  fill: #fff;
 }
