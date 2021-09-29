@@ -25,6 +25,33 @@ body {
   /* font-family: 'Barlow', sans-serif; */
 }
 
+/* Typography */
+/*
+
+Note : line here equals CSS line-height in px
+
+Fraunces Font : 
+Title Alternate Big : Fraunces Black, 150px, 72px line, All lowercase
+H1 : Fraunces Black, 72px, 72px line
+72/16=4.5
+H2 : Fraunces Black, 40px, 48px line
+40/16=2.5
+48/16=3
+H3 : Fraunces Black, 32px, 36px line
+32/16=2
+36/16=2.25
+H4 : Fraunces Black, 24px, 32px line
+24/16=1.5
+32/16=2
+Barlow Font : 
+Body : Barlow Regular, 16px, 26px line
+16/16=1
+26/16=1.625
+Navigation Menu : Barlow Bold, 12px, 15px line, 1.0 Character
+12/16=.75
+15/16=0.9375
+*/
+
 .mobile-menu-btn,
 .mobile-close-btn {
   width: 1em;
@@ -93,4 +120,11 @@ nav ul {
 #footer-logo {
   width: 12em;
   fill: #fff;
+}
+
+.content {
+  background: url('./assets/home/mobile/image-hero-coffeepress.jpg');
+  background-size: cover;
+  text-align: center;
+  color: #fefcf7;
 }
