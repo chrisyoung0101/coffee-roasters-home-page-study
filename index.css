@@ -28,6 +28,7 @@ body {
 .mobile-menu-btn,
 .mobile-close-btn {
   width: 2.5em;
+  height: 2.5em;
   cursor: pointer;
 }
 
@@ -76,9 +77,10 @@ nav {
 }
 
 /* svg */
-#nav-logo {
-  /* width: 12em; */
-  fill: black;
+.nav-logo {
+  width: 163px;
+  height: 18px;
+  /* border: 3px solid red; */
 }
 
 /* svg */
