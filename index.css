@@ -21,8 +21,6 @@ img {
 
 body {
   margin: 0;
-  font-family: 'Fraunces', serif;
-  /* font-family: 'Barlow', sans-serif; */
 }
 
 /* Typography */
@@ -51,6 +49,23 @@ Navigation Menu : Barlow Bold, 12px, 15px line, 1.0 Character
 12/16=.75
 15/16=0.9375
 */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Fraunces', serif;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+nav ul {
+  font-family: 'Barlow', sans-serif;
+}
+
+/* END Typography */
 
 .mobile-menu-btn,
 .mobile-close-btn {
@@ -123,8 +138,10 @@ nav ul {
 }
 
 .content {
+  margin-top: 2.5em;
   background: url('./assets/home/mobile/image-hero-coffeepress.jpg');
   background-size: cover;
   text-align: center;
   color: #fefcf7;
+  border-radius: 3.5%;
 }
