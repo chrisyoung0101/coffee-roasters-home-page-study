@@ -50,10 +50,13 @@ Navigation Menu : Barlow Bold, 12px, 15px line, 1.0 Character
 15/16=0.9375
 */
 
+/* Fraunces */
+
 h1,
 h2,
 h3,
-h4 {
+h4,
+.main-default-btn {
   font-family: 'Fraunces', serif;
 }
 
@@ -76,6 +79,13 @@ h4 {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+
+.main-default-btn {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+/* Barlow */
 
 body {
   font-family: 'Barlow', sans-serif;
@@ -168,10 +178,29 @@ nav ul {
   background-size: cover;
   text-align: center;
   color: #fefcf7;
-  border-radius: 3.5%;
-  padding: 4.25em 1em;
+  border-radius: 8px;
+  padding: 4.25em 1em 5.5em 1em;
+}
+
+main div p {
+  margin-bottom: 2.5em;
 }
 
 /* BUTTONS */
+
+/* global */
+/* main default - 217px x 56px OR 13.5625em x 3.5em, #0E8784 */
+.main-default-btn {
+  width: 13.5625rem;
+  height: 3.5rem;
+  background-color: #0e8784;
+  border: none;
+  border-radius: 5px;
+  padding: 0;
+  color: #fefcf7;
+  cursor: pointer;
+}
+/* main hover - #66D2CF */
+/* main disabled - #E2DEDB */
 
 /* home page - index.html */
