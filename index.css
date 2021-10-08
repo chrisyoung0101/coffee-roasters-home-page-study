@@ -133,6 +133,40 @@ footer {
   cursor: pointer;
 }
 
+/* ouCollection Section */
+
+.ourCollection {
+  position: relative;
+}
+
+.selectionsParentContainer {
+  position: relative;
+}
+
+.selectionsChildContainer {
+  height: 100vh;
+  /* allows the element to be in the background so 
+  we can lay the other elements on top  */
+  position: absolute;
+  width: 90%;
+  top: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: 90%;
+  /* z-index: 1; */
+}
+
+.selections {
+  background-color: var(--dark-grey-blue);
+}
+
+/* stopped adding all divs for ourCollection */
+
+.whyChooseUs {
+  display: none;
+  /* position: relative; */
+}
+
 /* We need a parent container with position: relative in order to give the  blackRectangleBackGroundContainer a position: absolute*/
 .blackRectangleBackGroundParentContainer {
   position: relative;
