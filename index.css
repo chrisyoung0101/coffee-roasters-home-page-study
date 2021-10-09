@@ -133,7 +133,7 @@ footer {
   cursor: pointer;
 }
 
-/* ouCollection Section */
+/* ourCollection Section */
 
 .ourCollectionTitle {
   font-family: 'Fraunces', serif;
@@ -172,10 +172,6 @@ footer {
   grid-template-columns: 90%;
   /* z-index: 1; */
 }
-
-/* .selections {
-  background-color: var(--dark-grey-blue);
-} */
 
 /* stopped adding all divs for ourCollection */
 
