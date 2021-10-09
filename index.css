@@ -135,6 +135,23 @@ footer {
 
 /* ouCollection Section */
 
+.ourCollectionTitle {
+  font-family: 'Fraunces', serif;
+  font-size: 2.7rem;
+  text-align: center;
+  background-image: linear-gradient(180deg, #a6a9ad, #d7d7d6);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  /* prevent clipping */
+  padding: 1%;
+  position: absolute;
+  top: 2.3em;
+}
+
+/* make this relative so top value starts from the top of this container */
 .ourCollection {
   position: relative;
 }
@@ -156,9 +173,9 @@ footer {
   /* z-index: 1; */
 }
 
-.selections {
+/* .selections {
   background-color: var(--dark-grey-blue);
-}
+} */
 
 /* stopped adding all divs for ourCollection */
 
