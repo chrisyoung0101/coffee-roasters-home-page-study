@@ -148,7 +148,8 @@ footer {
   /* prevent clipping */
   padding: 1%;
   position: absolute;
-  top: 2.3em;
+  top: 0;
+  margin: auto 0;
 }
 
 /* make this relative so top value starts from the top of this container */
@@ -156,21 +157,43 @@ footer {
   position: relative;
 }
 
-.selectionsParentContainer {
-  position: relative;
+/* mobile starts with all selections like this - column */
+/* this div is to put all selection in a horizontal column or vertical column */
+.selections {
+  display: flex;
+  flex-direction: column;
+  /* bouncing off main div */
+  margin-top: 9em;
 }
 
-.selectionsChildContainer {
-  height: 100vh;
-  /* allows the element to be in the background so 
-  we can lay the other elements on top  */
-  position: absolute;
-  width: 90%;
-  top: 0;
-  right: 0;
-  display: grid;
-  grid-template-columns: 90%;
-  /* z-index: 1; */
+/* make each selection its own flexbox with two flex-items */
+/* this allows the img and the text to go vert or horiz */
+/* parent div */
+.flex-selection {
+  /* bouncing off selections div */
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  /* align-content: center; */
+  align-items: center;
+  text-align: center;
+}
+
+/* nudge the header up towards the image */
+.flex-item h4 {
+  margin-top: 0.75em;
+}
+
+/* give the p in each  */
+.flex-item p {
+  margin-bottom: 4em;
+}
+
+/* size the selection image - Mobile */
+.selection-img {
+  height: 9.4375em;
+  width: 12.5em;
+  border: 1px solid black;
 }
 
 /* stopped adding all divs for ourCollection */
