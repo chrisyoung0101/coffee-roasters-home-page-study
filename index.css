@@ -1,3 +1,38 @@
+/* table of contents 
+
+1. global styles
+
+2. typography : h tags, links, p tags
+
+3. layout : sections, main, etc
+
+4. components
+  4.1 buttons
+
+
+
+
+
+
+*/
+
+/* ===============
+   1. global styles 
+  ================ */
+
+/* ===============
+   2. typography
+  ================ */
+
+/* =========
+   3. layout 
+  ==========*/
+
+/* =========
+  4. components
+    ========== */
+/* buttons */
+
 *,
 *:before,
 *:after {
@@ -135,9 +170,20 @@ footer {
 
 /* ourCollection Section */
 
+/* make this relative so top value starts from the top of this container */
+.ourCollection {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+}
+
+/* getting the gradient in the text */
+/* position: absolute requires special centering so used these props together to make it work = $.  Note that if we weren't centering we'd still want absolute and top:0 */
 .ourCollectionTitle {
   font-family: 'Fraunces', serif;
   font-size: 2.7rem;
+  width: 100%;
   text-align: center;
   background-image: linear-gradient(180deg, #a6a9ad, #d7d7d6);
   background-size: 100%;
@@ -147,14 +193,14 @@ footer {
   -moz-text-fill-color: transparent;
   /* prevent clipping */
   padding: 1%;
+  /* $ */
   position: absolute;
+  /* $ */
   top: 0;
-  margin: auto 0;
-}
-
-/* make this relative so top value starts from the top of this container */
-.ourCollection {
-  position: relative;
+  /* $ */
+  left: 50%;
+  /* $ */
+  transform: translate(-50%, -50%);
 }
 
 /* mobile starts with all selections like this - column */
@@ -184,16 +230,17 @@ footer {
   margin-top: 0.75em;
 }
 
-/* give the p in each  */
+/* give the p in each selection*/
 .flex-item p {
   margin-bottom: 4em;
+  /* pinch the text in a bit for mobile 375px width */
+  padding: 2%;
 }
 
 /* size the selection image - Mobile */
 .selection-img {
   height: 9.4375em;
   width: 12.5em;
-  border: 1px solid black;
 }
 
 /* stopped adding all divs for ourCollection */
