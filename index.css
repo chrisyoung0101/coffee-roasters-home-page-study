@@ -5,34 +5,23 @@
 2. typography : h tags, links, p tags
 
 3. layout : sections, main, etc
+  3.1 nav
+  3.2 main
+  3.3 our collection section
+  3.4 why choose us section
+  3.5 how it works section
+  3.6 footer
+
 
 4. components
   4.1 buttons
-
-
-
-
-
+  4.2 logos, icons, and such
 
 */
 
 /* ===============
    1. global styles 
   ================ */
-
-/* ===============
-   2. typography
-  ================ */
-
-/* =========
-   3. layout 
-  ==========*/
-
-/* =========
-  4. components
-    ========== */
-/* buttons */
-
 *,
 *:before,
 *:after {
@@ -47,6 +36,31 @@
   --grey: #83888f;
 }
 
+/* set images to fluid */
+img {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.container {
+  /* figma pixels to ems here  */
+  margin: 2.125em 1.5em 0 1.5em;
+}
+
+/* ===============
+   2. typography
+  ================ */
+
 a {
   text-decoration: none;
 }
@@ -57,18 +71,11 @@ ul {
   padding: 0;
 }
 
-/* set images to fluid */
-img {
-  width: 100%;
+main div p {
+  margin-bottom: 2.5em;
 }
 
-body {
-  margin: 0;
-}
-
-/* Typography */
 /*
-
 Note : line here equals CSS line-height in px
 
 Fraunces Font : 
@@ -123,52 +130,48 @@ h4 {
   line-height: 2rem;
 }
 
-.main-default-btn {
-  font-size: 1.125rem;
-  font-weight: 400;
-}
-
 /* Barlow */
 
-body {
-  font-family: 'Barlow', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 26px;
-}
+/* =========
+   3. layout 
+  ==========*/
 
+/* *** *** *** *** *** *** *** *** ***  */
+/*** 3.1 nav ***/
+/* *** *** *** *** *** *** *** *** ***  */
 nav ul {
   font-family: 'Barlow', sans-serif;
   font-size: 0.75rem;
   line-height: 0.9375rem;
 }
 
-/* END Typography */
-
-.mobile-menu-btn,
-.mobile-close-btn {
-  width: 1em;
-  height: 0.9375em;
-  cursor: pointer;
+nav {
+  display: flex;
+  justify-content: space-between;
 }
 
-/* .mobile-close-btn {
+/* temporarily hide nav menu */
+nav ul {
   display: none;
-} */
-
-footer {
-  /* this color shows in figma */
-  /* background-color: #2c343e; */
-  /* assuming this is the color I should use */
-  background-color: var(--dark-grey-blue);
 }
 
-.social {
-  width: 1.5em;
-  cursor: pointer;
+/* *** *** *** *** *** *** *** *** ***  */
+/*** 3.2 main section  ***/
+/* *** *** *** *** *** *** *** *** ***  */
+
+.content {
+  margin-top: 2.5em;
+  background: url('./assets/home/mobile/image-hero-coffeepress.jpg');
+  background-size: cover;
+  text-align: center;
+  color: #fefcf7;
+  border-radius: 8px;
+  padding: 4.25em 1em 5.5em 1em;
 }
 
-/* ourCollection Section */
+/* *** *** *** *** *** *** *** *** ***  */
+/*** 3.3 ourCollection Section ***/
+/* *** *** *** *** *** *** *** *** ***  */
 
 /* make this relative so top value starts from the top of this container */
 .ourCollection {
@@ -243,7 +246,9 @@ footer {
   width: 12.5em;
 }
 
-/* stopped adding all divs for ourCollection */
+/* *** *** *** *** *** *** *** *** ***  */
+/*** 3.4 why choose us section ***/
+/* *** *** *** *** *** *** *** *** ***  */
 
 .whyChooseUs {
   display: none;
@@ -274,51 +279,29 @@ footer {
   background-color: var(--dark-grey-blue);
 }
 
-.container {
-  /* figma pixels to ems here  */
-  margin: 2.125em 1.5em 0 1.5em;
+/* *** *** *** *** *** *** *** *** ***  */
+/* 3.5 how it works section */
+/* *** *** *** *** *** *** *** *** ***  */
+
+/* *** *** *** *** *** *** *** *** ***  */
+/*** 3.6 footer ***/
+/* *** *** *** *** *** *** *** *** ***  */
+
+footer {
+  /* this color shows in figma */
+  /* background-color: #2c343e; */
+  /* assuming this is the color I should use */
+  background-color: var(--dark-grey-blue);
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-}
+/* =========
+  4. components
+    ========== */
 
-/* temporarily hide nav menu */
-nav ul {
-  display: none;
-}
+/* *** *** *** *** *** *** *** *** ***  */
+/* 4.1 buttons */
+/* *** *** *** *** *** *** *** *** ***  */
 
-/* svg */
-.nav-logo {
-  width: 163px;
-  height: 18px;
-  /* border: 3px solid red; */
-}
-
-/* svg */
-#footer-logo {
-  width: 12em;
-  fill: #fff;
-}
-
-.content {
-  margin-top: 2.5em;
-  background: url('./assets/home/mobile/image-hero-coffeepress.jpg');
-  background-size: cover;
-  text-align: center;
-  color: #fefcf7;
-  border-radius: 8px;
-  padding: 4.25em 1em 5.5em 1em;
-}
-
-main div p {
-  margin-bottom: 2.5em;
-}
-
-/* BUTTONS */
-
-/* global */
 /* main default - 217px x 56px OR 13.5625em x 3.5em, #0E8784 */
 .main-default-btn {
   width: 13.5625rem;
@@ -333,4 +316,35 @@ main div p {
 /* main hover - #66D2CF */
 /* main disabled - #E2DEDB */
 
-/* home page - index.html */
+.mobile-menu-btn,
+.mobile-close-btn {
+  width: 1em;
+  height: 0.9375em;
+  cursor: pointer;
+}
+
+/* .mobile-close-btn {
+  display: none;
+} */
+
+/* *** *** *** *** *** *** *** *** ***  */
+/*** 4.2 logos, icons, and such  ***/
+/* *** *** *** *** *** *** *** *** ***  */
+
+/* svg */
+.nav-logo {
+  width: 163px;
+  height: 18px;
+  /* border: 3px solid red; */
+}
+
+/* svg */
+#footer-logo {
+  width: 12em;
+  fill: #fff;
+}
+
+.social {
+  width: 1.5em;
+  cursor: pointer;
+}
