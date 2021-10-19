@@ -111,49 +111,43 @@
         </section>
 
 
-        <!-- What should this be?  We have three cards laying offset on a black background which has type in it. -->
-        <!-- first try : keeping the black background and the cards separate in their own divs -->
+        <!-- 
+           parent container with header, paragraph and three card elements.  Card elements begin to overflow the bottom of the parent so does the parent just have a fixed height? 
+        -->
         <section class="whyChooseUs">
-            <div class="blackRectangleBackGroundParentContainer">
-                <div class="blackRectangleBackGroundContainer">
-                    <div class="blackRectangleBackGround">
-                        <h1>Why choose us?</h1>
-                        <p>A large part of our role is choosing which particular coffees will be featured
-                            in our range. This means working closely with the best coffee growers to give
-                            you a more impactful experience on every level.
-                        </p>
-                    </div>
-                </div>
 
+            <h1>Why choose us?</h1>
+            <p>A large part of our role is choosing which particular coffees will be featured
+                in our range. This means working closely with the best coffee growers to give
+                you a more impactful experience on every level.
+            </p>
+
+
+
+            <div class="card">
+                <img src="./assets/home/desktop/icon-coffee-bean.svg" alt="coffee bean icon" class="icon-coffee-bean">
+                <h1>Best quality</h1>
+                <p>Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
 
             </div>
-
-
-            <!-- flexbox? -->
-            <div class="cards">
-                <div class="card">
-                    <img src="./assets/home/desktop/icon-coffee-bean.svg" alt="coffee bean icon"
-                        class="icon-coffee-bean">
-                    <h1>Best quality</h1>
-                    <p>Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
-
-                </div>
-                <div class="card">
-                    <img src="./assets/home/desktop/icon-gift.svg" alt="gift icon" class="icon-gift">
-                    <h1>Exclusive benefits</h1>
-                    <p>
-                        Special offers and swag when you subscribe, including 30% off your first shipment.
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="./assets/home/desktop/icon-truck.svg" alt="truck icon" class="icon-truck">
-                    <h1>Free Shipping</h1>
-                    <p>
-                        We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.
-                    </p>
-                </div>
+            <div class="card">
+                <img src="./assets/home/desktop/icon-gift.svg" alt="gift icon" class="icon-gift">
+                <h1>Exclusive benefits</h1>
+                <p>
+                    Special offers and swag when you subscribe, including 30% off your first shipment.
+                </p>
             </div>
+            <div class="card">
+                <img src="./assets/home/desktop/icon-truck.svg" alt="truck icon" class="icon-truck">
+                <h1>Free Shipping</h1>
+                <p>
+                    We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.
+                </p>
+            </div>
+
         </section>
+
+
         <section class="howItWorks">
             <h3>How it works</h3>
             <div>three dots on a line thing</div>
