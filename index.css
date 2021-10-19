@@ -251,6 +251,9 @@ nav ul {
 /* *** *** *** *** *** *** *** *** ***  */
 
 .whyChooseUs {
+  border-radius: 8px;
+  text-align: center;
+  padding: 1.4em;
   background-color: var(--dark-grey-blue);
   height: 1499px;
   /* padding: 5em 5em 0em 5em; */
