@@ -310,6 +310,28 @@ nav ul {
 /* 3.5 how it works section */
 /* *** *** *** *** *** *** *** *** ***  */
 
+.container-howItWorks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header-howItWorks {
+  color: var(--grey);
+  margin-top: 3em;
+}
+
+/* big digit */
+.card-howItWorks h1 {
+  color: var(--pale-orange);
+  margin: 1em 0 0;
+}
+
+.card-howItWorks h3 {
+  white-space: nowrap;
+}
+
 /* *** *** *** *** *** *** *** *** ***  */
 /*** 3.6 footer ***/
 /* *** *** *** *** *** *** *** *** ***  */
