@@ -341,6 +341,19 @@ footer {
   /* background-color: #2c343e; */
   /* assuming this is the color I should use */
   background-color: var(--dark-grey-blue);
+  height: 21.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social {
+  margin: 1em;
 }
 
 /* =========
@@ -364,6 +377,10 @@ footer {
 }
 /* main hover - #66D2CF */
 /* main disabled - #E2DEDB */
+
+.howItWorks button {
+  margin: 6em;
+}
 
 .mobile-menu-btn,
 .mobile-close-btn {
@@ -389,8 +406,10 @@ footer {
 
 /* svg */
 #footer-logo {
+  /* background-color: red; */
   width: 12em;
   fill: #fff;
+  margin: 10em;
 }
 
 .social {
