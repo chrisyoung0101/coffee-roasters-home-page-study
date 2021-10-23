@@ -132,6 +132,14 @@ h4 {
 
 /* Barlow */
 
+footer a,
+nav a {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 0.9375rem;
+}
+
 /* =========
    3. layout 
   ==========*/
@@ -340,6 +348,9 @@ footer {
   /* this color shows in figma */
   /* background-color: #2c343e; */
   /* assuming this is the color I should use */
+
+  /* relative mainly to position the svg logo */
+  /* position: relative; */
   background-color: var(--dark-grey-blue);
   height: 21.625rem;
   display: flex;
@@ -347,7 +358,36 @@ footer {
   align-items: center;
 }
 
+.logo-container {
+  margin: 3.2em;
+}
+
+div svg {
+  /* 235 x 25 */
+  width: 236px;
+  height: 26px;
+}
+
+footer ul {
+  /* background-color: red; */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* align footer anchor text */
+footer li {
+  text-align: center;
+  padding: 0.5em;
+}
+
+footer a {
+  color: var(--grey);
+  text-transform: uppercase;
+}
+
 .socialIcons {
+  padding: 1em;
   display: flex;
   justify-content: space-around;
 }
@@ -404,12 +444,12 @@ footer {
   /* border: 3px solid red; */
 }
 
+/* using this?  */
 /* svg */
 #footer-logo {
   /* background-color: red; */
-  width: 12em;
-  fill: #fff;
-  margin: 10em;
+  /* width: 120em;
+  fill: #fff; */
 }
 
 .social {
