@@ -17,6 +17,8 @@
   4.1 buttons
   4.2 logos, icons, and such
 
+5. Media Queries
+
 */
 
 /* ===============
@@ -147,10 +149,14 @@ nav a {
 /* *** *** *** *** *** *** *** *** ***  */
 /*** 3.1 nav ***/
 /* *** *** *** *** *** *** *** *** ***  */
-nav ul {
+nav a {
   font-family: 'Barlow', sans-serif;
   font-size: 0.75rem;
   line-height: 0.9375rem;
+  color: var(--grey);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.2em;
 }
 
 nav {
@@ -455,4 +461,25 @@ footer a {
 .social {
   width: 1.5em;
   cursor: pointer;
+}
+
+/* *** *** *** *** *** *** *** *** ***  ***/
+/* *** *** ***  Media Quiries *** *** *** */
+/* *** *** *** *** *** *** *** *** ***  ***/
+
+/* from mobile to tablet */
+@media (min-width: 768px) {
+  nav ul {
+    display: flex;
+  }
+
+  .mobile-menu-btn,
+  .mobile-close-btn {
+    display: none;
+  }
+
+  .nav-logo {
+    width: 236px;
+    height: 26px;
+  }
 }
